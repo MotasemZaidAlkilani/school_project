@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".add">
+
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_name"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        app:cardElevation="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/type_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          <!-- design add student -->
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/liner_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+         android:layout_below="@id/add_name"
+        >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_student_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        app:cardElevation="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student name:"
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                />
+
+
+                <EditText
+                    android:id="@+id/edit_name_student"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="52dp"
+                    android:inputType="textPersonName"
+                    />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="National ID:"
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/edit_ssn_student"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="70dp"
+                android:inputType="number"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number :"
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_phone_student"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex :"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                />
+
+
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                >
+                <RadioButton
+                    android:id="@+id/male_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="18dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/female_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="18dp"
+                    />
+
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+               />
+
+
+             <TextView
+                 android:id="@+id/text_age_student"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:hint="mm/dd/yyy"
+                 android:layout_marginLeft="134dp"
+                 android:layout_marginTop="8dp"
+                 android:textSize="18dp"
+                 android:textColor="@android:color/black"
+                 />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          <!-- design add teacher -->
+
+
+
+
+          <LinearLayout
+              android:visibility="invisible"
+              android:id="@+id/liner_add_teacher"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_below="@id/add_name"
+              >
+
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/add_teacher_card_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  app:cardCornerRadius="15dp"
+                  android:layout_margin="5dp"
+                  android:layout_gravity="center"
+                  app:cardElevation="15dp">
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      >
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Teacher name:"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+
+                          <EditText
+                              android:id="@+id/edit_name_teacher"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="53dp"
+                              android:inputType="textPersonName"
+                              />
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="National ID:"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+                          <EditText
+                              android:id="@+id/edit_ssn_teacher"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="70dp"
+                              android:inputType="number"
+                              />
+
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Phone number :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+                          <EditText
+                              android:id="@+id/edit_phone_teacher"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="43dp"
+                              android:inputType="number"
+                              />
+
+                      </LinearLayout>
+
+
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Materials :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+                          <Spinner
+                              android:id="@+id/spinner_teacher"
+                              android:layout_width="wrap_content"
+                              android:layout_height="35dp"
+                              android:layout_marginLeft="114dp"
+                              >
+                          </Spinner>
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Sex :"
+                              android:layout_marginLeft="15dp"
+                              android:layout_marginTop="8dp"
+                              android:textSize="18dp"
+                              />
+
+
+
+                          <RadioGroup
+                              android:orientation="horizontal"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="125dp"
+                              >
+                              <RadioButton
+                                  android:id="@+id/male_teacher"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Male"
+                                  android:textSize="18dp"
+                                  />
+
+                              <RadioButton
+                                  android:id="@+id/female_teacher"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Female"
+                                  android:textSize="18dp"
+                                  />
+
+
+                          </RadioGroup>
+
+
+
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Age"
+                              android:layout_marginLeft="15dp"
+                              android:layout_marginTop="8dp"
+                              android:textSize="18dp"
+                              />
+
+
+                          <TextView
+                              android:id="@+id/text_age_teacher"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:hint="mm/dd/yyy"
+                              android:layout_marginLeft="134dp"
+                              android:layout_marginTop="8dp"
+                              android:textSize="18dp"
+                              android:textColor="@android:color/black"
+                              />
+
+
+                      </LinearLayout>
+
+
+                      <com.spark.submitbutton.SubmitButton
+                          android:id="@+id/save_teacher"
+                          android:layout_width="match_parent"
+                          android:layout_height="50dp"
+                          android:text="Save"
+                          android:textColor="@android:color/white"
+                          android:textSize="15dp"
+                          app:sub_btn_duration="2000"
+                          app:sub_btn_line_color="#B6D3E4"
+                          app:sub_btn_ripple_color="#6CA3C5"
+                          app:sub_btn_tick_color="@color/sub_btn_background"
+                          android:onClick="save_Teacher"
+                          />
+                      <!--<Button
+
+                      android:layout_width="300dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="10dp"
+                      android:fontFamily="@font/amaranth_bold_italic"
+                      android:onClick="login_button"
+                      android:text="@string/loginButton"
+                      android:background="@drawable/roundedbutton"
+                      android:textAlignment="center"
+                      android:textColor="#FFFFFF"
+                      android:textSize="17dp"
+                      android:textStyle="bold" /> -->
+
+
+
+
+                  </LinearLayout>
+
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+
+
+
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          <!-- design add parent -->
+
+          <LinearLayout
+              android:visibility="invisible"
+              android:id="@+id/liner_add_parent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_below="@id/liner_add_student"
+              >
+
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/add_parent_card_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  app:cardCornerRadius="15dp"
+                  android:layout_margin="5dp"
+                  android:layout_gravity="center"
+                  app:cardElevation="15dp">
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      >
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Parent name:"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+
+                          <EditText
+                              android:id="@+id/edit_name_parent"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="65dp"
+                              android:inputType="textPersonName"
+                              />
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="National ID:"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+                          <EditText
+                              android:id="@+id/edit_ssn_parent"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="70dp"
+                              android:inputType="number"
+                              />
+
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Phone parent :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+                          <EditText
+                              android:id="@+id/edit_phone_parent"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="43dp"
+                              android:inputType="number"
+                              />
+
+                      </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                      <com.spark.submitbutton.SubmitButton
+                          android:id="@+id/save_student"
+                          android:layout_width="match_parent"
+                          android:layout_height="50dp"
+                          android:text="Save"
+                          android:textColor="@android:color/white"
+                          android:textSize="15dp"
+                          app:sub_btn_duration="2000"
+                          app:sub_btn_line_color="#B6D3E4"
+                          app:sub_btn_ripple_color="#6CA3C5"
+                          app:sub_btn_tick_color="@color/sub_btn_background"
+                             android:onClick="save_student"
+                          />
+
+
+
+
+                  </LinearLayout>
+
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+
+
+
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          <!-- design add admin -->
+
+          <LinearLayout
+              android:visibility="invisible"
+              android:id="@+id/liner_add_admin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_below="@id/add_name"
+              >
+
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/add_admin_card_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  app:cardCornerRadius="15dp"
+                  android:layout_margin="5dp"
+                  android:layout_gravity="center"
+                  app:cardElevation="15dp">
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      >
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Admin name:"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+
+                          <EditText
+                              android:id="@+id/edit_name_admin"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="65dp"
+                              android:inputType="textPersonName"
+                              />
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="National ID:"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+                          <EditText
+                              android:id="@+id/edit_ssn_admin"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="70dp"
+                              android:inputType="number"
+                              />
+
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Phone numper :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+                          <EditText
+                              android:id="@+id/edit_phone_admin"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="43dp"
+                              android:inputType="number"
+                              />
+
+                      </LinearLayout>
+
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Sex :"
+                              android:layout_marginLeft="15dp"
+                              android:layout_marginTop="8dp"
+                              android:textSize="18dp"
+                              />
+
+
+
+                          <RadioGroup
+                              android:orientation="horizontal"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="125dp"
+                              >
+                              <RadioButton
+                                  android:id="@+id/male_admin"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Male"
+                                  android:textSize="18dp"
+                                  />
+
+                              <RadioButton
+                                  android:id="@+id/female_admin"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Female"
+                                  android:textSize="18dp"
+                                  />
+
+
+                          </RadioGroup>
+
+
+
+                      </LinearLayout>
+
+
+
+
+                  <LinearLayout
+                      android:layout_marginTop="15dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      >
+
+
+                      <CheckBox
+                          android:id="@+id/checkbox_admin"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="you can add admin"
+                          android:textSize="18dp"
+                          android:layout_marginTop="15dp"
+                          />
+
+
+                  </LinearLayout>
+
+
+                      <com.spark.submitbutton.SubmitButton
+                          android:id="@+id/save_admin"
+                          android:layout_width="match_parent"
+                          android:layout_height="50dp"
+                          android:text="Save"
+                          android:textColor="@android:color/white"
+                          android:textSize="15dp"
+                          app:sub_btn_duration="2000"
+                          app:sub_btn_line_color="#B6D3E4"
+                          app:sub_btn_ripple_color="#6CA3C5"
+                          app:sub_btn_tick_color="@color/sub_btn_background"
+                          android:onClick="save_admin"
+                          />
+
+
+
+
+                  </LinearLayout>
+
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          <!-- design add class -->
+
+          <LinearLayout
+              android:visibility="invisible"
+              android:id="@+id/liner_add_class"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_below="@id/add_name"
+              >
+
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/add_class_card_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  app:cardCornerRadius="15dp"
+                  android:layout_margin="5dp"
+                  android:layout_gravity="center"
+                  app:cardElevation="15dp">
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      >
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Class_Name :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+
+                          <EditText
+                              android:id="@+id/edit_class_name"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="65dp"
+                              android:inputType="textPersonName"
+                              />
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Number of student :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+                          <EditText
+                              android:id="@+id/edit_number_of_student"
+                              android:layout_width="160dp"
+                              android:layout_height="45dp"
+                              android:layout_marginLeft="18dp"
+                              android:inputType="number"
+                              />
+
+
+                      </LinearLayout>
+
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Materials :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+                          <Spinner
+                              android:id="@+id/spinner_material"
+                              android:layout_width="wrap_content"
+                              android:layout_height="35dp"
+                              android:layout_marginLeft="114dp"
+                              >
+                          </Spinner>
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Class supervisor :"
+                              android:layout_marginLeft="15dp"
+                              android:textSize="18dp"
+                              />
+
+                          <Spinner
+                              android:id="@+id/spinner_class_supervisor"
+                              android:layout_width="wrap_content"
+                              android:layout_height="35dp"
+                              android:layout_marginLeft="57dp"
+                              >
+                          </Spinner>
+
+                      </LinearLayout>
+
+
+                      <com.spark.submitbutton.SubmitButton
+                          android:id="@+id/save_class"
+                          android:layout_width="match_parent"
+                          android:layout_height="50dp"
+                          android:text="Save"
+                          android:textColor="@android:color/white"
+                          android:textSize="15dp"
+                          app:sub_btn_duration="2000"
+                          app:sub_btn_line_color="#B6D3E4"
+                          app:sub_btn_ripple_color="#6CA3C5"
+                          app:sub_btn_tick_color="@color/sub_btn_background"
+                            android:onClick="save_class"
+                          />
+
+
+
+
+                  </LinearLayout>
+
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+
+
+
+      </RelativeLayout>
+
+</ScrollView>
