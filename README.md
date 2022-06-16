@@ -59,3 +59,30 @@ _____________
  
 <img src="screenshots/teacher_main_page.png" width=100 /><img src="screenshots/teacher_create_class.png" width=100 /><img src="screenshots/teacher_class_created.png" width=100 /><img src="screenshots/teacher_class_list.png" width=100 />
 
+### 7. Edit Class
+When teacher created class, it will appear in previous page, in this figure, and after created the class will appear as in this figure, so in this page teacher can go in class by press on green button “go to class” for add list of things, and also teacher can delete class be press on “delete”. 
+
+<img src="screenshots/teacher_after_created_class.png" width=100 />
+
+### 8. Teacher Upload Video
+Teacher can upload video from internal phone storage then when choose video, teacher can pick name for it and it will save in database in storage
+
+<img src="screenshots/teacher_upload_video.jpg" width=100 />
+
+### 9. Teacher Upload File 
+Teacher can also upload files like words and pictures that will appear for students, so when teacher choose file, it will store in storage in database
+
+<img src="screenshots/teacher_upload_file.jpg" width=100 />
+
+### 10. Teacher Add and Remove and Show  Students
+Teacher can add new Student by enter their national id then press add.Teacher also can remove students who added before in class, by enter national id for required student and then press remove.
+
+<img src="screenshots/teacher_add_remove_student.png" width=100 />
+
+### 11. Teacher Mark Students
+Teacher can rate their students in mark section,  so teacher have first to choose student by click in his name in the list, then will appear the second picture below , that appear list of marks that marked before and two button ,first one to add new mark, and the second to back to previous page,  when teacher press on add marks button, to  complete  mark process for student, need to enter mark name ,mark value , the highest value that can student get it in this subject, so after enter all the required info ,it will appear in previous page in teacher ,and in mark section in students and parents .
+
+<img src="screenshots/Teacher_mark_page.jpg" width=100 /><img src="screenshots/teacher_add_mark.jpg" width=100 /><img src="screenshots/teacher_mark_student.jpg" width=100 /><img src="screenshots/teacher_add_note.jpg" width=100 />
+
+
+
