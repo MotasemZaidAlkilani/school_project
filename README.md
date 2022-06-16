@@ -83,6 +83,38 @@ Teacher can add new Student by enter their national id then press add.Teacher al
 Teacher can rate their students in mark section,  so teacher have first to choose student by click in his name in the list, then will appear the second picture below , that appear list of marks that marked before and two button ,first one to add new mark, and the second to back to previous page,  when teacher press on add marks button, to  complete  mark process for student, need to enter mark name ,mark value , the highest value that can student get it in this subject, so after enter all the required info ,it will appear in previous page in teacher ,and in mark section in students and parents .
 
 <img src="screenshots/Teacher_mark_page.jpg" width=100 /><img src="screenshots/teacher_add_mark.jpg" width=100 /><img src="screenshots/teacher_mark_student.jpg" width=100 /><img src="screenshots/teacher_add_note.jpg" width=100 />
+ 
+__________
+## STUDENT
 
+### 12. Student show class
+When student login by username and password, main page has 3 card view, the first one my class, and student information, logout, in my class, it will show his current subjects in the class.
 
+<img src="screenshots/student_main_page.png" width=100 />
+
+### 13. Student show video:
+when teacher upload videos, the videos will appear in all students that include in class , student when open video section in same class, it will appear video and student able to watch the video in browser and optionally to download it, in the video section after go in the required class , the videos will appear below each other’s, with video name and button beside it to go to the video to each one of them.
+
+<img src="screenshots/student_class.png" width=100 /><img src="screenshots/student_video.png" width=100 /><img src="screenshots/student_recive_file.png" width=100 />
+
+### 14. Student class grades 
+Teacher can put student’s marks in their page, so students and their parents will appear marks in “mark section”
+
+<img src="screenshots/student_grades.jpg" width=100 />
+
+____________
+## Parents
+
+### 15. Student show class
+When parent press on my children button, then their children will appear in next page, they can choose anyone from list to know their marks , mark section will appear after choose mark icon from below after choosing one of children 
+
+<img src="screenshots/parent_main_page.png" width=100 /><img src="screenshots/children_list.png" width=100 />
+
+### 16. show notes 
+When teacher write note about any student in note section, then the note will appear in their parent’s note section, after choosing one of children in list 
+
+____________
+
+### 17. Logout 
+Any user has logged in their account, they can by press in log out button to exit their account, so when log Out, they must enter username and password to log in again, it shows log out button that exist in every user page.
 
